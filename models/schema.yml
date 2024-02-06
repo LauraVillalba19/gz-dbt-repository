@@ -1,0 +1,16 @@
+sources:
+  - name: raw
+    schema: gz_raw_data
+    description: Greenweez Finance Team Requirements
+    tables:
+      - name: product
+        identifier: raw_gz_product
+        description: details about products
+
+      - name: sales
+        identifier: raw_gz_sales
+        description: details about sales
+
+      - name: ship
+        identifier: raw_gz_ship
+        description: details about ship 
