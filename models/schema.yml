@@ -30,20 +30,77 @@ sources:
 
       - name: adwords
         identifier: raw_gz_adwords
-        description: adwords of greenweez
-
-      - name: bing
-        identifier: raw_gz_bing
-        description: bing ads of greenweez
-
+        description: AdWords data with campaign details and costs
+        columns:
+          - name: date_date
+            description: Date of the ad campaign
+          - name: paid_source
+            description: Source of the paid ad
+          - name: campaign_key
+            description: Unique identifier for the ad campaign
+          - name: camPGN_name
+            description: Name of the ad campaign
+          - name: ads_cost
+            description: Cost of the ad
+          - name: impression
+            description: Number of impressions for the ad
+          - name: click
+            description: Number of clicks for the ad
       - name: criteo
         identifier: raw_gz_criteo
-        description: criteo ads of greenweez
-
+        description: Criteo data with campaign details and costs
+        columns:
+          - name: date_date
+            description: Date of the ad campaign
+          - name: paid_source
+            description: Source of the paid ad
+          - name: campaign_key
+            description: Unique identifier for the ad campaign
+          - name: camPGN_name
+            description: Name of the ad campaign
+          - name: ads_cost
+            description: Cost of the ad
+          - name: impression
+            description: Number of impressions for the ad
+          - name: click
+            description: Number of clicks for the ad
+      - name: bing
+        identifier: raw_gz_bing
+        description: bing data with campaign details and costs
+        columns:
+          - name: date_date
+            description: Date of the ad campaign
+          - name: paid_source
+            description: Source of the paid ad
+          - name: campaign_key
+            description: Unique identifier for the ad campaign
+          - name: camPGN_name
+            description: Name of the ad campaign
+          - name: ads_cost
+            description: Cost of the ad
+          - name: impression
+            description: Number of impressions for the ad
+          - name: click
+            description: Number of clicks for the ad
       - name: facebook
         identifier: raw_gz_facebook
-        description: facebook ads of greenweez
-        
+        description: facebook data with campaign details and costs
+        columns:
+          - name: date_date
+            description: Date of the ad campaign
+          - name: paid_source
+            description: Source of the paid ad
+          - name: campaign_key
+            description: Unique identifier for the ad campaign
+          - name: camPGN_name
+            description: Name of the ad campaign
+          - name: ads_cost
+            description: Cost of the ad
+          - name: impression
+            description: Number of impressions for the ad
+          - name: click
+            description: Number of clicks for the ad
+
 models:
   - name: int_sales_margin
     description: margin calcultation per order line / product sale
