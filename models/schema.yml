@@ -28,6 +28,22 @@ sources:
           - unique:
               column_name: orders_id
 
+      - name: adwords
+        identifier: raw_gz_adwords
+        description: adwords of greenweez
+
+      - name: bing
+        identifier: raw_gz_bing
+        description: bing ads of greenweez
+
+      - name: criteo
+        identifier: raw_gz_criteo
+        description: criteo ads of greenweez
+
+      - name: facebook
+        identifier: raw_gz_facebook
+        description: facebook ads of greenweez
+        
 models:
   - name: int_sales_margin
     description: margin calcultation per order line / product sale
