@@ -4,3 +4,4 @@ SELECT
 from {{ref ('int_campaigns')}} c
 LEFT JOIN FROM {{ref("int_orders_operational")}} o
 USING(date_date)
+GROUP BY date_date
