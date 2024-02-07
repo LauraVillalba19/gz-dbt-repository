@@ -1,4 +1,4 @@
-WITH adwords AS (
+/* WITH adwords AS (
   SELECT
     date_date,
     paid_source,
@@ -48,4 +48,8 @@ SELECT * FROM bing
 UNION ALL
 SELECT * FROM criteo
 UNION ALL
-SELECT * FROM facebook
+SELECT * FROM facebook */
+
+{{ dbt_utils.union_relations(
+    relations=[ref('stg_raw__adwords'),ref('stg_raw__bing'),ref('stg_raw__criteo'),ref('stg_raw__facebook') ]
+) }}
