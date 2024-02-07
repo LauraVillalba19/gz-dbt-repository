@@ -297,7 +297,39 @@ models:
         description: Number of impressions for the ad
       - name: click
         description: Number of clicks for the ad
-
+        
+  - name: finance_compaigns_day
+    description: This table contains daily financial information including ads cost
+    columns:
+      - name: date_date
+        description: date agregated by days
+        tests:
+          - not_null
+          - unique
+      - name: nb_transactions
+        description: The number of transactions made on the date.
+        tests:
+          - not_null
+      - name: revenue
+        description: The revenue generated on the date.
+        tests:
+          - not_null
+      - name: margin
+        description: The margin made on the date.
+        tests:
+          - not_null
+      - name: operational_margin
+        description: The operational margin made on the date.
+        tests:
+          - not_null
+      - name: average_basket
+        description: The average basket size on the date.
+        tests:
+          - not_null
+      - name: ads_cost
+        description: cost of ads campaigns
+        tests:
+          - not_null
 
 
 
